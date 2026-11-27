@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Условия использования и Правила — Pinkori ID</title>
+  <link rel="preconnect" href="https://googleapis.com">
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
+  <link href="https://googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --rbx-bg: #111214;
+      --rbx-surface: #191B1D;
+      --rbx-surface-hover: #232527;
+      --rbx-border: #2B2D30;
+      --rbx-text: #FFFFFF;
+      --rbx-text-muted: #BDBEBE;
+      --rbx-pink: #FF5E99;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: var(--rbx-bg);
+      color: var(--rbx-text);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .navbar {
+      background-color: var(--rbx-surface);
+      border-bottom: 1px solid var(--rbx-border);
+      height: 56px;
+      display: flex;
+      align-items: center;
+      padding: 0 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-left { display: flex; align-items: center; gap: 20px; }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--rbx-text);
+      font-weight: 800;
+      font-size: 20px;
+      letter-spacing: -0.5px;
+    }
+
+    .logo-icon {
+      width: 26px;
+      height: 26px;
+      background: var(--rbx-text);
+      border-radius: 4px;
+      transform: rotate(12deg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo-icon::after {
+      content: "";
+      width: 8px;
+      height: 8px;
+      background: var(--rbx-bg);
+      border-radius: 1px;
+    }
+
+    .nav-links { display: flex; gap: 8px; }
+
+    .nav-link {
+      color: var(--rbx-text-muted);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 6px 12px;
+      border-radius: 8px;
+      transition: 0.15s ease;
+    }
+
+    .nav-link:hover, .nav-link.active {
+      background-color: var(--rbx-surface-hover);
+      color: var(--rbx-text);
+    }
+
+    .container { max-width: 860px; margin: 36px auto; padding: 0 20px; }
+
+    .header-card, .section-card {
+      background-color: var(--rbx-surface);
+      border: 1px solid var(--rbx-border);
+      border-radius: 12px;
+      padding: 24px 32px;
+      margin-bottom: 16px;
+    }
+
+    .header-card { padding: 28px 32px; margin-bottom: 20px; }
+
+    .badge {
+      display: inline-block;
+      background-color: rgba(255, 94, 153, 0.15);
+      color: var(--rbx-pink);
+      font-size: 12px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 12px;
+    }
+
+    h1 { font-size: 28px; font-weight: 800; margin-bottom: 8px; letter-spacing: -0.4px; }
+    .updated { color: var(--rbx-text-muted); font-size: 13px; }
+
+    .section-card h2 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section-num {
+      background: var(--rbx-surface-hover);
+      border: 1px solid var(--rbx-border);
+      font-size: 13px;
+      font-weight: 700;
+      width: 26px;
+      height: 26px;
+      border-radius: 6px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    p, li { color: var(--rbx-text-muted); font-size: 15px; margin-bottom: 8px; }
+    p:last-child, li:last-child { margin-bottom: 0; }
+    ul { list-style: none; margin-top: 8px; }
+    li { padding-left: 20px; position: relative; }
+    li::before { content: "•"; color: var(--rbx-text); font-weight: bold; position: absolute; left: 4px; }
+    strong { color: var(--rbx-text); font-weight: 600; }
+
+    .footer {
+      text-align: center;
+      padding: 32px 20px 48px;
+      color: var(--rbx-text-muted);
+      font-size: 13px;
+      border-top: 1px solid var(--rbx-border);
+      margin-top: 40px;
+    }
+
+    .footer-links { display: flex; justify-content: center; gap: 24px; margin-bottom: 12px; }
+    .footer-links a { color: var(--rbx-text-muted); text-decoration: none; font-weight: 500; }
+    .footer-links a:hover { color: var(--rbx-text); text-decoration: underline; }
+
+    @media (max-width: 600px) {
+      .header-card, .section-card { padding: 20px; }
+      h1 { font-size: 22px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-left">
+      <a href="/" class="logo">
+        <div class="logo-icon"></div>
+        <span>PINKORI ID</span>
+      </a>
+      <div class="nav-links">
+        <a href="/terms" class="nav-link active">Правила и условия</a>
+        <a href="/privacy" class="nav-link">Конфиденциальность</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <div class="header-card">
+      <span class="badge">Документация Pinkori</span>
+      <h1>Условия использования и Правила игры</h1>
+      <div class="updated">Последнее обновление: 27 ноября 2026 г. • Домен: pinkori-id.vercel.app</div>
+    </div>
+
+    <div class="section-card">
+      <h2><span class="section-num">1</span> Общие положения</h2>
+      <p>Сервис <strong>Pinkori ID</strong> (<code>pinkori-id.vercel.app</code>) предоставляет единую систему регистрации, авторизации и управления учетными записями для игр и сервисов проекта <strong>Pinkori</strong>. Создавая аккаунт, привязывая Discord или запуская игру, вы подтверждаете согласие с настоящими правилами.</p>
+    </div>
+
+    <div class="section-card">
+      <h2><span class="section-num">2</span> Учетная запись и привязка Discord</h2>
+      <ul>
+        <li>Пользователь самостоятельно несет ответственность за безопасность своего аккаунта и сохранность данных для входа.</li>
+        <li>Передача, продажа или обмен учетными записями между игроками строго запрещены.</li>
+        <li>Привязка профиля <strong>Discord</strong> через OAuth2 выполняется добровольно для быстрого входа и синхронизации аватара/ника. Отвязать аккаунт можно в любой момент в настройках профиля или в самом Discord.</li>
+      </ul>
+    </div>
+
+    <div class="section-card">
+      <h2><span class="section-num">3</span> Правила поведения в игре и сообществе</h2>
+      <p>В играх, лаунчере и на серверах Pinkori запрещено:</p>
+      <ul>
+        <li>Использовать оскорбительные, нецензурные или провокационные никнеймы, аватары и статусы.</li>
+        <li>Выдавать себя за разработчиков, модераторов или администрацию проекта.</li>
+        <li>Оскорблять других игроков, разжигать конфликты, спамить в чате или рекламировать сторонние проекты без согласования.</li>
+        <li>Распространять вредоносные ссылки, личные данные других игроков (доксинг) или запрещенный контент.</li>
+      </ul>
+    </div>
+
+    <div class="section-card">
+      <h2><span class="section-num">4</span> Честная игра и технические ограничения</h2>
+      <ul>
+        <li>Строго запрещено использование читов, инжекторов, стороннего ПО, кликеров, эксплойтов и багов для получения нечестного преимущества.</li>
+        <li>Запрещены попытки взлома, DDoS-атак, спам-регистраций и вмешательства в работу серверов или API <code>pinkori-id.vercel.app</code>.</li>
+        <li>При обнаружении уязвимости или ошибки игрок обязан сообщить об этом администрации, а не использовать ее в личных целях.</li>
+      </ul>
+    </div>
+
+    <div class="section-card">
+      <h2><span class="section-num">5</span> Внутриигровая экономика и предметы</h2>
+      <ul>
+        <li>Внутриигровая валюта, предметы и прогресс являются частью игрового процесса и не имеют реальной денежной стоимости.</li>
+        <li>Запрещена покупка и продажа внутриигровых ценностей за реальные деньги между игроками.</li>
+        <li>Администрация оставляет за собой право изменять баланс, обновлять игровые механики или проводить перезагрузку экономики при необходимости развития проекта.</li>
+      </ul>
+    </div>
+
+    <div class="section-card">
+      <h2><span class="section-num">6</span> Нарушения и санкции</h2>
+      <ul>
+        <li>За нарушение правил администрация вправе вынести предупреждение, ограничить доступ к чату, обнулить игровой прогресс или заблокировать учетную запись (временно или навсегда).</li>
+        <li>Сервис и игры предоставляются «как есть» (as is). Администрация не несет ответственности за временные технические сбои или потерю доступа по вине пользователя.</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="/">Вход в аккаунт</a>
+      <a href="/terms">Условия использования</a>
+      <a href="/privacy">Политика конфиденциальности</a>
+    </div>
+    <div>© 2026 Pinkori Project. Все права защищены.</div>
+  </footer>
+
+</body>
+</html>

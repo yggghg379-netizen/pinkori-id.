@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Политика конфиденциальности — Pinkori ID</title>
+  <link rel="preconnect" href="https://googleapis.com">
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
+  <link href="https://googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --rbx-bg: #111214;
+      --rbx-surface: #191B1D;
+      --rbx-surface-hover: #232527;
+      --rbx-border: #2B2D30;
+      --rbx-text: #FFFFFF;
+      --rbx-text-muted: #BDBEBE;
+      --rbx-pink: #FF5E99;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: var(--rbx-bg);
+      color: var(--rbx-text);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .navbar {
+      background-color: var(--rbx-surface);
+      border-bottom: 1px solid var(--rbx-border);
+      height: 56px;
+      display: flex;
+      align-items: center;
+      padding: 0 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-left { display: flex; align-items: center; gap: 20px; }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--rbx-text);
+      font-weight: 800;
+      font-size: 20px;
+      letter-spacing: -0.5px;
+    }
+
+    .logo-icon {
+      width: 26px;
+      height: 26px;
+      background: var(--rbx-text);
+      border-radius: 4px;
+      transform: rotate(12deg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo-icon::after {
+      content: "";
+      width: 8px;
+      height: 8px;
+      background: var(--rbx-bg);
+      border-radius: 1px;
+    }
+
+    .nav-links { display: flex; gap: 8px; }
+
+    .nav-link {
+      color: var(--rbx-text-muted);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 6px 12px;
+      border-radius: 8px;
+      transition: 0.15s ease;
+    }
+
+    .nav-link:hover, .nav-link.active {
+      background-color: var(--rbx-surface-hover);
+      color: var(--rbx-text);
+    }
+
+    .container { max-width: 860px; margin: 36px auto; padding: 0 20px; }
+
+    .header-card, .section-card {
+      background-color: var(--rbx-surface);
+      border: 1px solid var(--rbx-border);
+      border-radius: 12px;
+      padding: 24px 32px;
+      margin-bottom: 16px;
+    }
+
+    .header-card { padding: 28px 32px; margin-bottom: 20px; }
+
+    .badge {
+      display: inline-block;
+      background-color: rgba(255, 94, 153, 0.15);
+      color: var(--rbx-pink);
+      font-size: 12px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 12px;
+    }
+
+    h1 { font-size: 28px; font-weight: 800; margin-bottom: 8px; letter-spacing: -0.4px; }
+    .updated { color: var(--rbx-text-muted); font-size: 13px; }
+
+    .section-card h2 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section-num {
+      background: var(--rbx-surface-hover);
+      border: 1px solid var(--rbx-border);
+      font-size: 13px;
+      font-weight: 700;
+      width: 26px;
+      height: 26px;
+      border-radius: 6px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    p, li { color: var(--rbx-text-muted); font-size: 15px; margin-bottom: 8px; }
+    p:last-child, li:last-child { margin-bottom: 0; }
+    ul { list-style: none; margin-top: 8px; }
+    li { padding-left: 20px; position: relative; }
+    li::before { content: "•"; color: var(--rbx-text); font-weight: bold; position: absolute; left: 4px; }
+    strong { color: var(--rbx-text); font-weight: 600; }
+
+    .footer {
+      text-align: center;
+      padding: 32px 20px 48px;
+      color: var(--rbx-text-muted);
+      font-size: 13px;
+      border-top: 1px solid var(--rbx-border);
+      margin-top: 40px;
+    }
+
+    .footer-links { display: flex; justify-content: center; gap: 24px; margin-bottom: 12px; }
+    .footer-links a { color: var(--rbx-text-muted); text-decoration: none; font-weight: 500; }
+    .footer-links a:hover { color: var(--rbx-text); text-decoration: underline; }
+
+    @media (max-width: 600px) {
+      .header-card, .section-card { padding: 20px; }
+      h1 { font-size: 22px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-left">
+      <a href="/" class="logo">
+        <div class="logo-icon"></div>
+        <span>PINKORI ID</span>
+      </a>
+      <div class="nav-links">
+        <a href="/terms" class="nav-link">Правила и условия</a>
+        <a href="/privacy" class="nav-link active">Конфиденциальность</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <div class="header-card">
+      <span class="badge">Безопасность данных</span>
+      <h1>Политика конфиденциальности</h1>
+      <div class="updated">Последнее обновление: 27 ноября 2026 г. • Домен: pinkori-id.vercel.app</div>
+    </div>
+
+    <div class="section-card">
+      <h2><span class="section-num">1</span> Какие данные мы собираем</h2>
+      <p>Для работы учетной записи сервис <code>pinkori-id.vercel.app</code> сохраняет только минимально необходимые данные:</p>
+      <ul>
+        <li>Ваш <strong>логин</strong> (имя пользователя) и зашифрованный (хешированный) <strong>пароль</strong>;</li>
+        <li>Уникальный идентификатор <strong>Discord ID</strong> и никнейм — при добровольной привязке профиля через Discord OAuth2.</li>
+      </ul>
+      <p>Мы <strong>не запрашиваем</strong> адрес электронной почты, ссылки на аватары, пароль от Discord, личные сообщения или список ваших серверов.</p>
+    </div>
+
+    <div class="section-card">
+      <h2><span class="section-num">2</span> Как используются данные</h2>
+      <ul>
+        <li>Для создания учетной записи, входа в лаунчер и игры проекта <strong>Pinkori</strong>;</li>
+        <li>Для привязки профиля Discord и защиты вашего аккаунта.</li>
+      </ul>
+    </div>
+
+    <div class="section-card">
+      <h2><span class="section-num">3</span> Хранение и удаление данных</h2>
+      <ul>
+        <li>Пароли хранятся исключительно в зашифрованном (хешированном) виде.</li>
+        <li>Мы не передаем и не продаем ваши данные третьим лицам.</li>
+        <li>Вы можете отвязать Discord в любой момент или запросить удаление учетной записи у администрации проекта.</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="/">Вход в аккаунт</a>
+      <a href="/terms">Условия использования</a>
+      <a href="/privacy">Политика конфиденциальности</a>
+    </div>
+    <div>© 2026 Pinkori Project. Все права защищены.</div>
+  </footer>
+
+</body>
+</html>
